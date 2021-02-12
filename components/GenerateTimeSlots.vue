@@ -1,6 +1,6 @@
 <template>
 <div 
-                @click="toggleBooking(2, slotDate(slotHours, slotMinutes))"
+                @click="toggleBooking(2, slotDate(slotHours, slotMinutes),expired)"
                 v-if="loaded"
                 class="slotRow"
                 :id="('ID-'+slotHours+slotMinutes)"

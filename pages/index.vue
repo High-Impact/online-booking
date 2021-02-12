@@ -153,15 +153,16 @@
                 this.timeSelected = slot;
                 this.timeUpdated = true;
             },
-            toggleBooking: function(step, slot) {
+            toggleBooking: function(step, slot, expired) {
+                if(!expired) {
+                    this.updateSelected(step, slot);
+                    
+                    console.log(this.booking);
+                    
+                    this.booking = !this.booking;
 
-                this.updateSelected(step, slot);
-                
-                console.log(this.booking);
-                
-                this.booking = !this.booking;
-
-                console.log(this.booking);
+                    console.log(this.booking);
+                }
             },
 
             
@@ -183,10 +184,13 @@
     background: #ddd;
     display: flex;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     align-items: flex-start;
     font-size: 18px;
-    padding-top:5em;
+    padding:2em;
+}
+#__layout > div {
+    max-width: 90vw;
 }
   #__layout #message-header {
     display: flex;
