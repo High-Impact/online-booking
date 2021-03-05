@@ -1,21 +1,5 @@
-# Nuxt.js Example
+# Online Booking
 
-This directory is a brief example of a [Nuxt.js](https://nuxtjs.org) app that can be deployed with Vercel and zero configuration.
+A friend of mine runs a rock climbing gym. Due to COVID-19 they had to limit their gyms capacity to 15 climbers at a time, with 90 minute clibing windows. This is a system that I created to help with the administration of this schedule.
 
-## Deploy Your Own
-
-Deploy your own Nuxt.js project with Vercel.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/vercel/vercel/tree/master/examples/nuxtjs)
-
-_Live Example: https://nuxtjs.now-examples.now.sh_
-
-### How We Created This Example
-
-To get started with Nuxt.js deployed with Vercel, you can use the [Create-Nuxt-App CLI](https://www.npmjs.com/package/create-nuxt-app) to initialize the project:
-
-```shell
-$ npx create-nuxt-app my-app
-```
-
-> The only change made is to amend the output directory in `nuxt.config.js` to `"/public"`.
+[Live Demo](http://online-booking.jonknoll.dev "Live Demo")
