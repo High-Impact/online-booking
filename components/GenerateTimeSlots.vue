@@ -110,11 +110,11 @@ export default {
                 }
             },
             timeCorrection: function(hours, minutes) {
-                let date = new Date(this.today.getFullYear(),this.today.getMonth(),this.today.getDate(),(this.double00(hours) - 6), this.double00(minutes));
+                let date = new Date(this.today.getFullYear(),this.today.getMonth(),this.today.getDate(),(this.double00(hours) - 5), this.double00(minutes));
                 return this.formatampm(date);
             },
             slotDate: function(hours, minutes) {
-                let date = new Date(this.today.getFullYear(),this.today.getMonth(),this.today.getDate(),(this.double00(hours) - 6), this.double00(minutes));
+                let date = new Date(this.today.getFullYear(),this.today.getMonth(),this.today.getDate(),(this.double00(hours) - 5), this.double00(minutes));
                 return date;
             },
             

@@ -51,7 +51,7 @@ export default {
                 if ( !this.expired ) {
                     this.stepClick(2, true)
                     // this.step = 2;
-                    let selected = new Date(this.dateSelected.getFullYear(), this.dateSelected.getMonth(), this.dateSelected.getDate(), this.double00(hours) - 6, this.double00(minutes), 0);
+                    let selected = new Date(this.dateSelected.getFullYear(), this.dateSelected.getMonth(), this.dateSelected.getDate(), this.double00(hours) - 5, this.double00(minutes), 0);
                     this.updateTimeSelected(selected);
                 }
             }
